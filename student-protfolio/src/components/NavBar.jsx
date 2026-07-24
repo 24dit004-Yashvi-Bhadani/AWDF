@@ -1,14 +1,14 @@
-function NavBar({activeSection}){
-    return(
-        <nav>
-        <a href="#about"  style={{color:activeSection=== 'Home' ? 'grey': 'white' }}  >About</a>
-        { ' | '}
-        <a href="#skilks"  style={{color: activeSection === 'Skills' ?'grey': 'white' }}  >Skills</a>
-        {' | '}
-        <a href="#footer"  style={{color: activeSection === 'Footer' ?'grey': 'white' }}  >Foooter</a>
+import { Link } from 'react-router-dom'
+import './navbar.css'
 
+function NavBar() {
+    return (
+        <nav className="navbar">
+            <Link to="/">Home</Link>
+            <Link to="/Project">Projects</Link>
+            <Link to="/Contect">Contact</Link>
         </nav>
     )
 }
 
-export default NavBar ;
+export default NavBar

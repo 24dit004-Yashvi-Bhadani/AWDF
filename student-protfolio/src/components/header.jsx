@@ -1,10 +1,9 @@
-function Header({themeColor}){
-    return(
-
-        <header   style={{color:themeColor}}  >
-            <h1>Student Portfolio</h1>
+function Header() {
+    return (
+        <header>
+            <h1 className="header-title">Student Portfolio</h1>
         </header>
-    );
+    )
 }
 
 export default Header;

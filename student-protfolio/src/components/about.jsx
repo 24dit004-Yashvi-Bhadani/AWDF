@@ -1,7 +1,7 @@
 function About(){
     return(
 
-            <p>THis is website of Student Portfolio </p>
+            <p>This is website of Student Portfolio </p>
       
     );
 }
