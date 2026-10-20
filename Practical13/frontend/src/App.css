@@ -1,0 +1,134 @@
+.app {
+  min-height: 100vh;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app.light {
+  background: #f8f9fb;
+  color: #202938;
+}
+
+.app.dark {
+  background: #171b24;
+  color: #e5eaf2;
+  color-scheme: dark;
+}
+
+.app.light {
+  color-scheme: light;
+}
+
+.header-title {
+  color: #222;
+}
+
+.app.dark .header-title {
+  color: #f5f5f5;
+}
+
+.app.dark h1,
+.app.dark h2,
+.app.dark h3,
+.app.dark p,
+.app.dark label {
+  color: #e5eaf2;
+}
+
+.app.dark .home-page,
+.app.dark .contact-page,
+.app.dark .project-page,
+.app.dark .not-found-page,
+.app.dark .subDiv {
+  border-color: #3a4353;
+  background: #232a36;
+  color: #e5eaf2;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.app.dark .home-page h1,
+.app.dark .contact-page h2,
+.app.dark .project-page h1,
+.app.dark .home-page p,
+.app.dark .contact-page p,
+.app.dark .project-page p,
+.app.dark .not-found-page p,
+.app.dark .subDiv p {
+  color: #c2ccda;
+}
+
+.app.dark .contact-page input,
+.app.dark .route-card input,
+.app.dark .container input {
+  border-color: #495569;
+  background: #171d27;
+  color: #eef2f8;
+}
+
+.app.dark .contact-page input::placeholder,
+.app.dark .container input::placeholder {
+  color: #9aa8bb;
+}
+
+.app.dark .subDiv a {
+  color: #a9c5f4;
+}
+
+.app.dark .not-found-page h2 {
+  color: #ff9b9b;
+}
+
+.route-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.app.dark .route-card {
+  border-color: #3a4353;
+  background: #232a36;
+  color: #e5eaf2;
+}
+
+.route-card input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.loading-fallback {
+  display: flex;
+  min-height: 120px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: inherit;
+}
+
+.loading-spinner {
+  width: 22px;
+  height: 22px;
+  border: 3px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: loading-spin 0.8s linear infinite;
+}
+
+.task-chart {
+  max-width: 440px;
+  margin: 24px auto;
+}
+
+.task-chart-canvas {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@keyframes loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

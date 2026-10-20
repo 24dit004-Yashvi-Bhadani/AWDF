@@ -1,0 +1,15 @@
+.container{
+    width: 100%;
+    margin: 20px;
+}
+.subDiv{
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-align: left;
+    padding: 20px 30px;
+}
+
+.subDiv p{
+    padding: 0;
+}

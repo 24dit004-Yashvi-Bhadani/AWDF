@@ -1,0 +1,62 @@
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.textarea {
+    padding: 10px;
+    font-size: 16px;
+    min-height: 80px;
+}
+
+.button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.deleteButton {
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.task {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.success {
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* Completed task title */
+.completed {
+    text-decoration: line-through;
+}
