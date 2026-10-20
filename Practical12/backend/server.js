@@ -4,6 +4,7 @@ const cors = require("cors");
 const cache = require("./utils/cache");
 require("dotenv").config();
 require('./listeners');
+const MONGO_URI = process.env.MONGO_URI;
 
 const app = express();
 
@@ -97,13 +98,7 @@ app.use((err, req, res, next) => {
 });
 
 
-// -------------------------
-// Start server
-// -------------------------
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
 
 // -------------------------
 // Start server
